@@ -14,3 +14,13 @@ A dockerfile to create an image for MS SQL Server in windows sub system for linu
 ```
   docker run -p <machineportno>:<serverportno(1433)> -d <image-name> --name <container-name>
 ```
+### To clean broken files
+```
+  docker system prune -f
+```
+
+eg :- 
+```
+docker build -t restored-db:1.0.1 .
+docker run --name mssql1 -p 1432:1433 -d restored-db:1.0.1
+```
