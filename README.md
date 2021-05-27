@@ -1,5 +1,5 @@
 # MSSQLServer-Container
-A dockerfile to create an image for MS SQL Server in windows sub system for linux
+A dockerfile to create an image for MS SQL Server in WSL-2 (windows sub system for linux)
 
 ## What the image does?
 - The image will run a script to restore the AdventureWorks.BAK file to build DB
